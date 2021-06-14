@@ -1,5 +1,5 @@
 <?php
-require_once '/Applications/MAMP/db_config.php';
+require_once 'db_config.php';
 //データベースへ接続、テーブルがない場合は作成
 try {
   $pdh = new PDO('mysql:host=localhost;dbname=db5;charset=utf8', $user, $pass);
@@ -30,12 +30,15 @@ try {
   $name = $_POST['nameone'];
   $mail = $_POST['mail'];
   $password= $_POST['passone'];
-
   $stmt = $pdh->prepare("INSERT INTO logins (nameone ,mail, passone) value(?, ?, ?)");
   $stmt->execute([$name, $mail, $password]);
   echo '登録完了';
+  echo "<a href='index.html'>トップページへ戻る</a>";
+
 } catch (\Exception $e) {
   echo '登録済みのメールアドレスです。';
+  echo "<a href='index.html'>トップページへ戻る</a>";
+
 }
 
 

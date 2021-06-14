@@ -1,6 +1,6 @@
 <?php
 // データベースのユーザー名とパスワードを変数に保存する
-require_once '/Applications/MAMP/db_config.php';
+require_once 'db_config.php';
 
 // 例外処理
 // 通常動作
@@ -16,7 +16,6 @@ $sql = "SELECT * FROM gohan";
 $stmt = $dbh->query($sql);
 // ③SQL文の結果の取り出し(fetchAll:配列として全て取り出す、FETCH_ASSOC:カラム名をつける)
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 // テーブルに表示する
 // \nは改行
 echo "<table>\n";

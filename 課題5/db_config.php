@@ -1,6 +1,6 @@
 <?php
 // データベースのユーザー名とパスワードを変数に保存する
-$user = "";
-$pass = "";
+$user = "gotoun";
+$pass = "Kyodai19";
 
 

@@ -1,5 +1,7 @@
 var btn1 = document.getElementById('new');
 var btn2 = document.getElementById('login');
+var btn3 = document.getElementById('login10');
+var btn4 = document.getElementById('analysis');
 var modal1 = document.getElementById('modal1');
 var modal2 = document.getElementById('modal2');
 // もし入力した最新の数値が平均よりも高ければ(あかん)
@@ -20,6 +22,26 @@ var modal2 = document.getElementById('modal2');
 closeBtn1.addEventListener('click', function(){
 modal1.style.display = 'none';
 })  
+
+btn3.addEventListener('click', function(){
+    modal1.style.display = 'block';
+    modal2.style.display = 'none';
+})
+// モーダルを非表示にする
+    var closeBtn1 = document.getElementById('closeBtn1'); 
+closeBtn1.addEventListener('click', function(){
+modal1.style.display = 'none';
+})  
+
+btn4.addEventListener('click', function(){
+    modal2.style.display = 'block';
+})
+// モーダルを非表示にする
+    var closeBtn1 = document.getElementById('closeBtn1'); 
+closeBtn2.addEventListener('click', function(){
+modal2.style.display = 'none';
+})  
+
 // // firebase読み込み設定
 // // firesbaseのサイトのコード---------------------------
 // // Your web app's Firebase configuration

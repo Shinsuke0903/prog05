@@ -91,7 +91,7 @@
         <h2>1時間前までにリクエストすれば、これから行く飲食店のご飯の量を調整できます</h2>
         <!-- ボタンの作成書いていく -->
         <div class="request">
-          <a href="request.html" class="btn-gradation" id="analysis">ご飯の量をリクエスト</a>
+          <a class="btn-gradation" id="analysis">ご飯の量をリクエスト</a>
         </div>
       </div>
       <!-- 最下部を書いていく(お問い合わせフォーム) -->
@@ -139,30 +139,42 @@
     <!-- 良い -->
     <div id="modal1" class="modalgood">
       <div class="modal-content">
-          <div class="modal-body">
-            <!-- モーダルを閉じるボタン -->
-            <div class="batsu">
-                <input type="button" id="closeBtn1" value="×"> 
-            </div>
-            <!-- ログインをクリックしたら表示する -->
-            <div class="log">
-              <h1>ログインページ</h1>
-              <form action="login.php" method="post">
-                <div>
-                  <label>メールアドレス：<label>
-                  <input type="text" name="mail" required>
-                </div>
-                <div>
-                  <label>パスワード：<label>
-                  <input type="password" name="pass" required>
-                </div>
-                <input type="submit" value="ログイン">
-              </form>
-            </div>  
+        <div class="modal-body">
+          <!-- モーダルを閉じるボタン -->
+          <div class="batsu">
+              <input type="button" id="closeBtn1" value="×"> 
           </div>
+          <!-- ログインをクリックしたら表示する -->
+          <div class="log">
+            <div class="log-item">
+              <h1>ログインして下さい</h1>
+            </div>
+            <form action="login.php" method="post">
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">メールアドレス</p> 
+                </p>
+                <!-- entityの部分 -->           
+                  <input type="text" class="Form-Item-Input1" name="mail" >
+              </div>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">パスワード</p> 
+                </p>
+                <!-- entityの部分 -->
+                <input type="password" class="Form-Item-Input1" name="passone" >
+              </div>
+              <div class="log-bt">
+                <input type="submit" class="Form-Btn1" value="ログイン">
+              </div>
+            </form>
+          </div>  
         </div>
       </div>
     </div>
+
     <!-- あかん -->
     <div id="modal2" class="modalbad">
       <div class="modal-content">
@@ -171,30 +183,43 @@
           <div class="batsu">
               <input type="button" id="closeBtn2" value="×"> 
           </div>
-          <div class="new">
-            <!-- 新規会員登録をクリックしたら表示する -->
-            <h1>新規会員登録</h1>
-            <form action="signup.php" method="post"><!-- 処理を行う宛先を指定 -->
-              <div>
-                <label>名前：<label>
-                <input type="text" name="nameone" required>
+        <!-- ログインをクリックしたら表示する -->
+          <div class="log">
+            <div class="log-item">
+              <h1>新規会員登録</h1>
+            </div>
+            <form action="signup.php" method="post">
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">名前</p> 
+                </p>         
+                  <input type="text" class="Form-Item-Input1" name="nameone" required>
               </div>
-              <div>
-                <label>メールアドレス：<label>
-                <input type="text" name="mail" required>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">メールアドレス</p> 
+                </p>
+                <input type="password" class="Form-Item-Input1" name="mail" required>
               </div>
-              <div>
-                <label>パスワード：<label>
-                <input type="password" name="passone" required>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">パスワード</p> 
+                </p>
+                <input type="password" class="Form-Item-Input1" name="passone" required >
               </div>
-              <input type="submit" value="新規登録">
+              <div class="log-bt">
+                <input type="submit" class="Form-Btn1" value="新規登録">
+                <p id="login10">登録済みの方はこちら</p>
+              </div>
             </form>
-          </div>  
+          </div>    
         </div>
       </div>
     </div>
     <!-- フッターの作成 -->
-    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <!--   

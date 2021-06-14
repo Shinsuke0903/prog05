@@ -9,7 +9,7 @@
     <a href="form.html">レシピの新規登録</a>
 <?php
 // データベースのユーザー名とパスワードを変数に保存する
-require_once '/Applications/MAMP/db_config.php';
+require_once 'db_config.php';
 
 
 $recipe_name = $_POST['recipe_name'];

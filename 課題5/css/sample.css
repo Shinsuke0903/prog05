@@ -408,7 +408,7 @@ h1 {
 .modalgood{
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   left: 0;
   top: 0;
   height: 100%;
@@ -426,7 +426,7 @@ h1 {
   .modalbad{
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   left: 0;
   top: 0;
   height: 100%;
@@ -438,6 +438,7 @@ h1 {
     width:40px;
     float:right;
     margin-right:30px;
+    margin-top: 10px;
   }
   .modalbad p{
     text-align: center;
@@ -464,7 +465,7 @@ h1 {
     float:right;
   }
   .modal-body p{
-    font-size:30px;
+    font-size:16px;
   }
 .good{
   padding-top:20px;
@@ -507,6 +508,107 @@ h1 {
   height:200px;
   width:250px;
   margin-left: 120px;
+}
+.log{
+  padding-top: 1px;
+
+}
+
+
+.log h1{
+  font-size: 20px;
+  margin-top: 40px;
+}
+.log-item{
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.Form-Item1 {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+   
+}
+.Form-Item-Label1 {
+  width: 100%;
+  max-width: 80px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 12px;
+}
+.log-bt{
+  margin-top: 50px;
+}
+.log-bt p{
+  cursor: pointer;
+  width: 180px;
+  margin-left: 300px;
+  margin-top: 8px;
+}
+.log-bt p:hover{
+  opacity: 0.3;
+}
+
+.modal-item{
+  width:110px;
+
+}
+.req{
+  
+  width:30px;
+  margin-left: 10px;
+}
+
+.Form-Item-Label-Required1 {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding:10px 10px;
+  width: 8px;
+  text-align: center;
+  background: #ff6928;
+  color: #fff;
+  font-size: 10px;
+  
+}
+
+.Form-Item-Input1 {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 24px;
+  flex: 1;
+  width: 100%;
+  max-width: 200px;
+  background: #eaedf2;
+  font-size: 8px;
+
+}
+
+.Form-Btn1 {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 200px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #ff6928;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+.Form-Btn1:hover{
+  opacity:0.7;
 }
 
 /* フッターの設定 */

@@ -1,6 +1,6 @@
 <?php
 // データベースのユーザー名とパスワードを変数に保存する
-require_once '/Applications/MAMP/db_config.php';
+require_once 'db_config.php';
 // 例外処理
 // 通常動作
 try{

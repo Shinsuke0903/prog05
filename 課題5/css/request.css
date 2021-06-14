@@ -146,8 +146,28 @@
     color: #fff;
     font-weight: bold;
     font-size: 20px;
+
   }
   .Form-Btn:hover{
+    opacity:0.7;
+  }
+  .Form-Btn2 {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 80px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #ff6928;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  .Form-Btn2:hover{
     opacity:0.7;
   }
   @media screen and (max-width: 480px) {
@@ -159,7 +179,19 @@
       font-size: 16px;
     }
   }
-  
+  .lastbottom{
+    display: flex;
+    
+  }
+  .lastbottom1{
+    
+    margin-left: 40px;
+  }
+  .lastbottom2{
+
+    margin-left: 300px;
+  }
+
   
   
   
